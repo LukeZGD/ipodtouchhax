@@ -19,13 +19,13 @@
 		<p><span class="text-primary"><b></span></b>Also, I provide pre-patched files so don't worry about it being hard.</p>
 	</div>
 </div>
-	
+
 <div class="container">
 	<div class="well">
 		<p><span class="text-primary"><b></span></b>First of all, download these files:</p>
-		<a class="btn btn-sm btn-default" href="https://drive.google.com/open?id=10qAIGKJhFCHZ2R8xD7iJ69xiPRgkkaJL">bootchain.zip</a>
-		<a class="btn btn-sm btn-default" href="https://drive.google.com/open?id=1BkewWzkYoaV0RSMoalbjx017FL7ulR5n">wifi.zip</a>
-		<a class="btn btn-sm btn-default" href="https://drive.google.com/open?id=1lzUWPWM28H7yMBaeC8Q9lj5pWXlFIRJ-">bootloader.zip</a>
+		<a class="btn btn-sm btn-default" href="files/bootchain.zip">bootchain.zip</a>
+		<a class="btn btn-sm btn-default" href="files/wifi.zip">wifi.zip</a>
+		<a class="btn btn-sm btn-default" href="files/bootloader.zip">bootloader.zip</a>
 	</div>
 </div>
 
@@ -39,7 +39,7 @@
 		<p><span class="text-primary"><b></span></b>If your device has been produced after 2011, iPhone 3,3 7.1.2 ipsw </p>
 		<p><span class="text-primary"><b></span></b>7zip (or winrar) and dmg </p>
 	</div>
-</div>	
+</div>
 
 <div class="container">
 	<div class="well">
@@ -53,8 +53,8 @@
 		<p><span class="text-primary"><b></span></b>Then convert the decrypted rootfs to UDZO format: </p>
 		<p><span class="text-primary"><b></span></b>dmg build decrypted.dmg UDZO.dmg</p>
 	</div>
-</div>		
-	
+</div>
+
 <div class="container">
 	<div class="well">
 		<h1>Partitioning</h1>
@@ -134,7 +134,7 @@
 		<p><span class="text-primary"><b></span></b>Done! If your device is still alive,</p>
 		<p><span class="text-primary"><b></span></b>execute sync a few times</p>
 	</div>
-</div>		
+</div>
 
 
 
@@ -152,8 +152,8 @@
 		<p><span class="text-primary"><b></span></b>asr restore --source /mnt2/UDZO.dmg --target /dev/disk0s1s3 --erase</p>
 		<p><span class="text-primary"><b></span></b>Done</p>
 	</div>
-</div>		
-	
+</div>
+
 <div class="container">
 	<div class="well">
 		<h1>Modifying filesystems</h1>
@@ -173,7 +173,7 @@
 		<a class="btn btn-sm btn-default" href="https://nyansatan.github.io/dualboot/resources/fstab.png">Turn this</a>
 		<a class="btn btn-sm btn-default" href="https://nyansatan.github.io/dualboot/resources/fstab_p.png">Into this</a>
 	</div>
-</div>	
+</div>
 
 <div class="container">
 	<div class="well">
@@ -186,7 +186,7 @@
 		<p><span class="text-primary"><b></span></b>Extract bootloader.zip</p>
 		<p><span class="text-primary"><b></span></b>Copy files in /</p>
 	</div>
-</div>	
+</div>
 
 <div class="container">
 	<div class="well">
@@ -200,29 +200,27 @@
 		<p><span class="text-primary"><b></span></b>Wait about 6-7 seconds and press home or power button</p>
 		<p><span class="text-primary"><b></span></b>Done! You can now enjoy verbose boot and iOS 7 on your iPod Touch 4g!</p>
 	</div>
-</div>	
+</div>
 
 <div class="container">
 	<div class="well">
 		<h1>Jailbreaking</h1>
 		<p><span class="text-primary"><b></span></b>Thanks a lot to @JonathanSeals, developer of coolbooter</p>
 		<p><span class="text-primary"><b></span></b>First of all, download these files:</p>
-		<a class="btn btn-sm btn-default" href="https://drive.google.com/open?id=17aHoLEXsHKwf39JCxC5R9MIhO4iARtqI">cydia.tar.lzma</a>
-		<a class="btn btn-sm btn-default" href="https://drive.google.com/open?id=1JPOtSmNetpXVWHhluGbZxURqFca84pJx">jbloader.tar.lzma</a>
-		<a class="btn btn-sm btn-default" href="https://drive.google.com/open?id=1C6nWXlGFMxglawjXaDMqFaDaJRyhGK23">kernelcache.zip</a>
+		<a class="btn btn-sm btn-default" href="https://github.com/LukeZGD/Legacy-iOS-Kit/raw/refs/heads/main/resources/jailbreak/freeze.tar">freeze.tar</a>
+		<a class="btn btn-sm btn-default" href="files/kernelcache.zip">kernelcache.zip</a>
 		<p><span class="text-primary"><b></span></b>Mount partitions</p>
 		<p><span class="text-primary"><b></span></b>mount_hfs /dev/disk0s1s3 /mnt1 && mount_hfs /dev/disk0s1s4 /mnt1/private/var</p>
 		<p><span class="text-primary"><b></span></b>Extract kernelcache.zip and replace the previous kernelcache file in /mnt1 </p>
-		<p><span class="text-primary"><b></span></b>Put cydia.tar.lzma and jbloader.tar.lzma in /mnt1</p>
+		<p><span class="text-primary"><b></span></b>Put freeze.tar in /mnt1</p>
 		<p><span class="text-primary"><b></span></b>From ssh:</p>
-		<p><span class="text-primary"><b></span></b>tar --lzma -xvf cydia.tar.lzma</p>
-		<p><span class="text-primary"><b></span></b>tar --lzma -xvf jbloader.tar.lzma</p>
+		<p><span class="text-primary"><b></span></b>tar -xvf cydia.tar.lzma</p>
 		<p><span class="text-primary"><b></span></b>Edit fstab and put rw in disk0s1s3</p>
 		<p><span class="text-primary"><b></span></b>Done. You can now unmount filesystems if you want</p>
 	</div>
-</div>	
-	
-	
+</div>
+
+
 <div class="container">
 	<div class="well">
 		<h1>Thanks to</h1>
@@ -231,7 +229,7 @@
 		<p><span class="text-primary"><b></span></b>Me (@albyvar25) for the wifi fix </p>
 		<p><span class="text-primary"><b></span></b>Everyone else who contributed.</p>
 	</div>
-</div>	
-	
+</div>
+
 </body>
 </html>
