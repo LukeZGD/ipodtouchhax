@@ -208,13 +208,15 @@
 		<p><span class="text-primary"><b></span></b>Thanks a lot to @JonathanSeals, developer of coolbooter</p>
 		<p><span class="text-primary"><b></span></b>First of all, download these files:</p>
 		<a class="btn btn-sm btn-default" href="https://github.com/LukeZGD/Legacy-iOS-Kit/raw/refs/heads/main/resources/jailbreak/freeze.tar">freeze.tar</a>
+		<a class="btn btn-sm btn-default" href="files/jbloader.tar.lzma">jbloader.tar.lzma</a>
 		<a class="btn btn-sm btn-default" href="files/kernelcache.zip">kernelcache.zip</a>
 		<p><span class="text-primary"><b></span></b>Mount partitions</p>
 		<p><span class="text-primary"><b></span></b>mount_hfs /dev/disk0s1s3 /mnt1 && mount_hfs /dev/disk0s1s4 /mnt1/private/var</p>
 		<p><span class="text-primary"><b></span></b>Extract kernelcache.zip and replace the previous kernelcache file in /mnt1 </p>
-		<p><span class="text-primary"><b></span></b>Put freeze.tar in /mnt1</p>
+		<p><span class="text-primary"><b></span></b>Put freeze.tar and jbloader.tar.lzma in /mnt1</p>
 		<p><span class="text-primary"><b></span></b>From ssh:</p>
-		<p><span class="text-primary"><b></span></b>tar -xvf cydia.tar.lzma</p>
+		<p><span class="text-primary"><b></span></b>tar -xvf freeze.tar</p>
+		<p><span class="text-primary"><b></span></b>tar --lzma -xvf jbloader.tar.lzma</p>
 		<p><span class="text-primary"><b></span></b>Edit fstab and put rw in disk0s1s3</p>
 		<p><span class="text-primary"><b></span></b>Done. You can now unmount filesystems if you want</p>
 	</div>
